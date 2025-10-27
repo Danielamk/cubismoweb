@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obras del Cubismo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&family=Inter:wght@300;400;500;600&family:Cormorant:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">CUBISMO</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="introduccion.html" class="nav-link">Introducción</a>
+                <a href="artistas.html" class="nav-link">Artistas</a>
+                <a href="obras.html" class="nav-link">Obras</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero de la página -->
+    <section class="obras-hero">
+        <div class="container">
+            <h1 class="obras-hero-title">Galería Cubista</h1>
+            <p class="obras-hero-subtitle">Las obras que transformaron la historia del arte moderno</p>
+        </div>
+    </section>
+
+    <!-- Barra decorativa -->
+    <section class="decorative-bar">
+        <div class="container">
+            <p class="bar-text">Obras clave de Pablo Picasso, Georges Braque y Juan Gris</p>
+        </div>
+    </section>
+
+    <!-- Galería Grid -->
+    <section class="gallery-section">
+        <!-- Decoraciones geométricas de fondo -->
+        <div class="gallery-decor">
+            <div class="decor-circle decor-1"></div>
+            <div class="decor-triangle decor-2"></div>
+            <div class="decor-diamond decor-3"></div>
+            <div class="decor-rectangle decor-4"></div>
+            <div class="decor-circle decor-5"></div>
+        </div>
+        
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Obra 1 -->
+                <div class="gallery-item" 
+                     data-title="Las señoritas de Aviñón"
+                     data-year="1907"
+                     data-artist="Pablo Picasso"
+                     data-desc="Obra inicial del Cubismo. Las figuras se fragmentan con influencia del arte africano."
+                     data-img="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/K7ULATCSWJDXHG6FOIGQTYYJK4.jpg">
+                    <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/K7ULATCSWJDXHG6FOIGQTYYJK4.jpg" 
+                         alt="Las señoritas de Aviñón" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-text">Ver obra</span>
+                    </div>
+                </div>
+
+                <!-- Obra 2 -->
+                <div class="gallery-item"
+                     data-title="Guernica"
+                     data-year="1937"
+                     data-artist="Pablo Picasso"
+                     data-desc="Representa el horror de la guerra. Símbolo universal del anti-bélico."
+                     data-img="https://www.latamarte.com/media/d2/cache/4a/ed/4aedea0ac84758591a079094e6a7d7cb.jpg">
+                    <img src="https://www.latamarte.com/media/d2/cache/4a/ed/4aedea0ac84758591a079094e6a7d7cb.jpg" 
+                         alt="Guernica" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-text">Ver obra</span>
+                    </div>
+                </div>
+
+                <!-- Obra 3 -->
+                <div class="gallery-item"
+                     data-title="Violín y paleta"
+                     data-year="1909"
+                     data-artist="Georges Braque"
+                     data-desc="Ejemplo del cubismo analítico con paleta limitada y formas descompuestas."
+                     data-img="https://www.singulart.com/blog/wp-content/uploads/2024/10/Violin-and-Candlestick-Braque-Georges-1910-2-824x1024.jpg">
+                    <img src="https://www.singulart.com/blog/wp-content/uploads/2024/10/Violin-and-Candlestick-Braque-Georges-1910-2-824x1024.jpg" 
+                         alt="Violín y paleta" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-text">Ver obra</span>
+                    </div>
+                </div>
+
+                <!-- Obra 4 -->
+                <div class="gallery-item"
+                     data-title="Mujer con mandolina"
+                     data-year="1909"
+                     data-artist="Pablo Picasso"
+                     data-desc="Figura humana descompuesta en planos múltiples; influencia de la música en Picasso."
+                     data-img="https://arthive.com/res/media/img/orig/work/1a1/259397.jpg">
+                    <img src="https://arthive.com/res/media/img/orig/work/1a1/259397.jpg" 
+                         alt="Mujer con mandolina" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-text">Ver obra</span>
+                    </div>
+                </div>
+
+                <!-- Obra 5 -->
+                <div class="gallery-item"
+                     data-title="El guitarrista"
+                     data-year="1910"
+                     data-artist="Pablo Picasso"
+                     data-desc="Representación profunda de la pobreza y el sufrimiento del artista."
+                     data-img="https://uploads2.wikiart.org/00198/images/pablo-picasso/old-guitarist-chicago.jpg!Large.jpg">
+                    <img src="https://uploads2.wikiart.org/00198/images/pablo-picasso/old-guitarist-chicago.jpg!Large.jpg" 
+                         alt="El guitarrista" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-text">Ver obra</span>
+                    </div>
+                </div>
+
+                <!-- Obra 6 -->
+                <div class="gallery-item"
+                     data-title="Retrato de Pablo Picasso"
+                     data-year="1914"
+                     data-artist="Juan Gris"
+                     data-desc="Homenaje a Picasso usando técnicas del Cubismo Sintético."
+                     data-img="https://uploads2.wikiart.org/images/juan-gris/portrait-of-pablo-picasso-1912.jpg!Large.jpg">
+                    <img src="https://uploads2.wikiart.org/images/juan-gris/portrait-of-pablo-picasso-1912.jpg!Large.jpg" 
+                         alt="Retrato de Pablo Picasso" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-text">Ver obra</span>
+                    </div>
+                </div>
+
+                <!-- Obra 7 -->
+                <div class="gallery-item"
+                     data-title="Las casas en el País Vasco"
+                     data-year="1908"
+                     data-artist="Pablo Picasso"
+                     data-desc="Transición del fauvismo al cubismo con estructuras simplificadas."
+                     data-img="https://arthive.com/res/media/img/ox800/work/be3/430715.jpg">
+                    <img src="https://arthive.com/res/media/img/ox800/work/be3/430715.jpg" 
+                         alt="Las casas en el País Vasco" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-text">Ver obra</span>
+                    </div>
+                </div>
+
+                <!-- Obra 8 -->
+                <div class="gallery-item"
+                     data-title="La muchacha con mandolina"
+                     data-year="1910"
+                     data-artist="Georges Braque"
+                     data-desc="Otra obra clave del cubismo analítico con compleja fragmentación."
+                     data-img="https://arthive.com/res/media/img/ox800/work/1e7/340547.jpg">
+                    <img src="https://arthive.com/res/media/img/ox800/work/1e7/340547.jpg" 
+                         alt="La muchacha con mandolina" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-text">Ver obra</span>
+                    </div>
+                </div>
+
+                <!-- Obra 9 -->
+                <div class="gallery-item"
+                     data-title="El castillo en La Roche-Guyon"
+                     data-year="1909"
+                     data-artist="Georges Braque"
+                     data-desc="Arquitectura reinterpretada con perspectivas múltiples."
+                     data-img="https://arthive.com/res/media/img/sx400/work/137/121332@2x.jpg">
+                    <img src="https://arthive.com/res/media/img/sx400/work/137/121332@2x.jpg" 
+                         alt="El castillo en La Roche-Guyon" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-text">Ver obra</span>
+                    </div>
+                </div>
+
+                <!-- Obra 10 -->
+                <div class="gallery-item"
+                     data-title="Naturaleza muerta con Anís del Mono"
+                     data-year="1909"
+                     data-artist="Pablo Picasso"
+                     data-desc="Uso temprano de texto como elemento visual en la pintura."
+                     data-img="https://uploads2.wikiart.org/images/pablo-picasso/still-life-with-bottle-of-anis-del-mono-1909.jpg!Large.jpg">
+                    <img src="https://uploads2.wikiart.org/images/pablo-picasso/still-life-with-bottle-of-anis-del-mono-1909.jpg!Large.jpg" 
+                         alt="Naturaleza muerta con Anís del Mono" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-text">Ver obra</span>
+                    </div>
+                </div>
+
+                <!-- Obra 11 -->
+                <div class="gallery-item"
+                     data-title="El puerto de Le Havre"
+                     data-year="1909"
+                     data-artist="Georges Braque"
+                     data-desc="Paisaje cubista con planos geométricos y múltiples puntos de vista."
+                     data-img="https://uploads0.wikiart.org/images/georges-braque/harbor-in-normandy-1909.jpg!Large.jpg">
+                    <img src="https://uploads0.wikiart.org/images/georges-braque/harbor-in-normandy-1909.jpg!Large.jpg" 
+                         alt="El puerto de Le Havre" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-text">Ver obra</span>
+                    </div>
+                </div>
+
+                <!-- Obra 12 -->
+                <div class="gallery-item"
+                     data-title="La Catedral de Chartres"
+                     data-year="1910"
+                     data-artist="Georges Braque"
+                     data-desc="Interpretación cubista de la arquitectura gótica francesa."
+                     data-img="https://uploads7.wikiart.org/images/georges-braque/chartres-cathedral-1930.jpg!Large.jpg">
+                    <img src="https://uploads7.wikiart.org/images/georges-braque/chartres-cathedral-1930.jpg!Large.jpg" 
+                         alt="La Catedral de Chartres" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-text">Ver obra</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal único reutilizable -->
+    <div id="artModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <h3 id="modal-title" class="modal-title"></h3>
+                    <p id="modal-year" class="modal-year"></p>
+                    <p id="modal-artist" class="modal-author"></p>
+                    <p id="modal-desc" class="modal-description"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Editorial -->
+    <footer class="editorial-footer">
+        <div class="container">
+            <h3 class="footer-title">Cubismo — El Arte de Romper la Realidad</h3>
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="m16 11.37-3.64-3.64a1 1 0 0 0-1.41 0L7.31 11.37"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Pinterest">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M9 12l2 2 4-4"></path>
+                    </svg>
+                </a>
+            </div>
+            <p class="footer-copyright">&copy; 2025 Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

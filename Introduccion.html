@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción al Cubismo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&family=Inter:wght@300;400;500;600&family=Cormorant:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">CUBISMO</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="introduccion.html" class="nav-link">Introducción</a>
+                <a href="artistas.html" class="nav-link">Artistas</a>
+                <a href="obras.html" class="nav-link">Obras</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero de Introducción -->
+    <section class="intro-hero" id="intro-hero">
+        <img src="https://i.pinimg.com/736x/21/00/a9/2100a93b0127f4206b58660df0e00013.jpg" 
+             alt="Introducción al Cubismo" class="intro-hero-bg">
+        <div class="intro-hero-overlay"></div>
+        <div class="intro-hero-content">
+            <h1 class="intro-hero-title">Introducción al Cubismo</h1>
+            <p class="intro-hero-subtitle">El movimiento que cuestionó la realidad y reinventó la forma de ver.</p>
+            <a href="artistas.html" class="cta-button primary">
+                Explorar Artistas
+                <span class="arrow">→</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Primer bloque: ¿Qué es el Cubismo? -->
+    <div class="intro-content-block">
+        <div class="container">
+            <div class="two-column-layout">
+                <div class="image-column">
+                    <img src="https://ichef.bbci.co.uk/images/ic/480xn/p0f9v2xb.jpg" 
+                         alt="Arte Cubista" class="decorative-image">
+                </div>
+                <div class="text-column">
+                    <h2 class="content-title">¿Qué es el Cubismo?</h2>
+                    <p class="content-text">
+                        El Cubismo fue un movimiento artístico revolucionario surgido en Francia entre 1907 y 1914. Su objetivo fue representar la realidad desde múltiples perspectivas al mismo tiempo, rompiendo con el arte tradicional basado en una sola vista frontal. A través de la geometría, la fragmentación de las formas y la reducción de la paleta cromática, el Cubismo desafió la manera en que entendemos el mundo visual.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bloque "Sus Orígenes" -->
+    <div class="origins-block">
+        <div class="container">
+            <div class="two-column-layout reverse">
+                <div class="text-column">
+                    <h2 class="origins-title">Los inicios de una revolución visual</h2>
+                    <p class="origins-text">
+                        Todo comenzó con Pablo Picasso y Georges Braque en París. Guiados por influencias como Cézanne y el arte africano, rompieron las reglas académicas y buscaron traducir la realidad a formas geométricas básicas: cubos, cilindros, conos. El espectador debía reconstruir la imagen en su mente, convirtiéndose en parte activa de la obra.
+                    </p>
+                </div>
+                <div class="image-column">
+                    <div class="abstract-composition">
+                        <div class="geo-shape shape-cube"></div>
+                        <div class="geo-shape shape-triangle"></div>
+                        <div class="geo-shape shape-circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Etapas del Cubismo -->
+    <div class="phases-block">
+        <div class="container">
+            <h2 class="phases-title">Las dos fases del Cubismo</h2>
+            <div class="phases-grid">
+                <div class="phase-card">
+                    <div class="phase-icon">1</div>
+                    <h3 class="phase-name">Cubismo Analítico</h3>
+                    <p class="phase-period">(1907–1912)</p>
+                    <p class="phase-description">Colores apagados, formas descompuestas<br>La figura casi se pierde en la geometría</p>
+                </div>
+                <div class="phase-card">
+                    <div class="phase-icon">2</div>
+                    <h3 class="phase-name">Cubismo Sintético</h3>
+                    <p class="phase-period">(1912–1914)</p>
+                    <p class="phase-description">Collage, tipografías, materiales reales<br>Formas más planas y reconocibles</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cita destacada -->
+    <div class="quote-highlight">
+        <div class="container">
+            <blockquote class="highlight-quote">
+                "El arte es una mentira que nos hace ver la verdad."
+                <cite>— Pablo Picasso</cite>
+            </blockquote>
+        </div>
+    </div>
+
+    <!-- Bloque final -->
+    <div class="intro-final-cta">
+        <div class="container">
+            <h2 class="final-title">¿Quieres conocer más sobre el Cubismo?</h2>
+            <a href="artistas.html" class="cta-button primary large">
+                Conoce a los artistas
+                <span class="arrow">→</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Cubismo — El Arte de Romper la Realidad</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
