@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Cubismo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&family=Inter:wght@300;400;500;600&family=Cormorant:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">CUBISMO</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="introduccion.html" class="nav-link">Introducción</a>
+                <a href="artistas.html" class="nav-link">Artistas</a>
+                <a href="obras.html" class="nav-link">Obras</a>
+                <a href="contacto.html" class="nav-link active">Contacto</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero de Contacto -->
+    <section class="contact-hero">
+        <!-- Decoraciones geométricas de fondo -->
+        <div class="contact-decor">
+            <div class="decor-circle decor-1"></div>
+            <div class="decor-triangle decor-2"></div>
+            <div class="decor-diamond decor-3"></div>
+            <div class="decor-rectangle decor-4"></div>
+        </div>
+        
+        <div class="contact-hero-bg">
+            <img src="https://i.pinimg.com/736x/21/00/a9/2100a93b0127f4206b58660df0e00013.jpg" 
+                 alt="Arte cubista de fondo" class="contact-hero-image">
+        </div>
+        <div class="contact-hero-overlay"></div>
+        
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1 class="contact-hero-title">¿Hablamos de Cubismo?</h1>
+                <p class="contact-hero-subtitle">Cuéntame tu proyecto o pregunta y te respondo con gusto.</p>
+                
+                <!-- Formulario flotante -->
+                <div class="contact-form-card">
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <!-- Honeypot field -->
+                        <input type="text" name="company" class="honeypot" tabindex="-1" autocomplete="off">
+                        
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nombre *</label>
+                            <input type="text" id="name" name="name" class="form-input" required minlength="2" 
+                                   aria-describedby="name-error" autocomplete="name">
+                            <span id="name-error" class="form-error" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-input" required 
+                                   aria-describedby="email-error" autocomplete="email">
+                            <span id="email-error" class="form-error" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Asunto *</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required 
+                                   aria-describedby="subject-error" autocomplete="off">
+                            <span id="subject-error" class="form-error" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensaje *</label>
+                            <textarea id="message" name="message" class="form-textarea" required minlength="20" 
+                                      rows="5" aria-describedby="message-error" autocomplete="off"></textarea>
+                            <span id="message-error" class="form-error" aria-live="polite"></span>
+                        </div>
+                        
+                        <button type="submit" class="form-submit" id="submitBtn">
+                            <span class="btn-text">ENVIAR MENSAJE</span>
+                            <span class="btn-arrow">→</span>
+                            <div class="btn-spinner" style="display: none;">
+                                <div class="spinner"></div>
+                            </div>
+                        </button>
+                        
+                        <div id="form-message" class="form-message" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloques de Redes Sociales -->
+    <section class="social-blocks">
+        <div class="container">
+            <div class="social-grid">
+                <!-- Instagram -->
+                <div class="social-card">
+                    <div class="social-card-bg">
+                        <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=800&h=600&fit=crop&auto=format" 
+                             alt="Arte cubista Instagram" class="social-image">
+                    </div>
+                    <div class="social-overlay"></div>
+                    <div class="social-content">
+                        <h3 class="social-title">Instagram</h3>
+                        <p class="social-description">Descubre contenido visual exclusivo</p>
+                        <a href="#" class="social-cta" aria-label="Ir a Instagram">
+                            <span>Síguenos</span>
+                            <span class="social-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Pinterest -->
+                <div class="social-card">
+                    <div class="social-card-bg">
+                        <img src="https://i.pinimg.com/736x/95/5d/7b/955d7bc13fccbc8da479b178772a74f9.jpg" 
+                             alt="Arte cubista Pinterest" class="social-image">
+                    </div>
+                    <div class="social-overlay"></div>
+                    <div class="social-content">
+                        <h3 class="social-title">Pinterest</h3>
+                        <p class="social-description">Colecciones de arte e inspiración</p>
+                        <a href="#" class="social-cta" aria-label="Ir a Pinterest">
+                            <span>Inspírate</span>
+                            <span class="social-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- TikTok -->
+                <div class="social-card">
+                    <div class="social-card-bg">
+                        <img src="https://i.pinimg.com/736x/2c/da/a2/2cdaa2f39ec927828d598aa3fe446318.jpg" 
+                             alt="Arte cubista TikTok" class="social-image">
+                    </div>
+                    <div class="social-overlay"></div>
+                    <div class="social-content">
+                        <h3 class="social-title">TikTok</h3>
+                        <p class="social-description">Videos cortos sobre arte</p>
+                        <a href="#" class="social-cta" aria-label="Ir a TikTok">
+                            <span>Conectemos</span>
+                            <span class="social-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloque de Descarga -->
+    <section class="download-section">
+        <div class="container">
+            <div class="download-content">
+                <h2 class="download-title">Descarga una guía rápida del Cubismo</h2>
+                <p class="download-subtitle">Todo lo esencial sobre el movimiento que cambió el arte para siempre</p>
+                <a href="#" class="download-cta" onclick="alert('Función de descarga próximamente disponible')">
+                    <span>DESCARGAR PDF</span>
+                    <span class="download-icon">⬇</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Editorial -->
+    <footer class="editorial-footer">
+        <div class="container">
+            <h3 class="footer-title">Cubismo — El Arte de Romper la Realidad</h3>
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="m16 11.37-3.64-3.64a1 1 0 0 0-1.41 0L7.31 11.37"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Pinterest">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M9 12l2 2 4-4"></path>
+                    </svg>
+                </a>
+            </div>
+            <p class="footer-copyright">&copy; 2025 Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
